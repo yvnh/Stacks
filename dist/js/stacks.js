@@ -1827,6 +1827,8 @@ Copyright © 2019 Basecamp, LLC
 ;
 
 (function () {
+    "use strict";
+
     var cache = Object.create(null);
     var rootPath;
     var cacheBreaker = "";
@@ -1879,7 +1881,7 @@ Copyright © 2019 Basecamp, LLC
                 var attr = source.attributes[0];
                 source.removeAttributeNode(attr);
                 if (attr.name === "class") {
-                    this.element.className += " " + attr.value;
+                    this.element.setAttribute("class", this.element.getAttribute("class") + " " + attr.value);
                 } else {
                     var alreadyPresent = attr.namespaceURI ? this.element.hasAttributeNS(attr.namespaceURI, attr.name) : this.element.hasAttribute(attr.name);
                     if (!alreadyPresent)
@@ -1909,8 +1911,10 @@ Copyright © 2019 Basecamp, LLC
             }
             ensureCSS();
             this.element.classList.add("svg-skeleton-element-during-loading");
+            this.element.classList.add("svg-icon");
+            this.element.classList.add("icon" + name);
             var that = this;
-            get(name).then(function (svgSource) {
+            promise.then(function (svgSource) {
                 that._setSvgSource(svgSource);
                 // the skeleton is no longer a skeleton, so we can now remove the "hide this" class
                 that.element.classList.remove("svg-skeleton-element-during-loading");
