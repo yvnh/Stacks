@@ -80,16 +80,12 @@
     }
 }
 
-//  [1] To override .s-btn class attributes
+//  To override .s-btn class attributes
 .s-modal--close {
-    position: absolute !important; // [1]
-    top: @su8;
-    right: @su8;
-    padding: @su12 !important; // [1]
-
-    .svg-icon {
-        margin: 0 !important;
-    }
+    float: right;
+    top: -@su4; // Compensate for s-modal's padding
+    right: -@su4; // Compensate for s-modal's padding
+    padding: @su12 !important;
 }
 
 //  ============================================================================
