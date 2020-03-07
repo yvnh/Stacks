@@ -23,12 +23,15 @@
     @body-background:                                var(--white);
     @body-site-width:                                1060px;
 
+    // Theme-aware variable
+    @theme-primary-color:                            var(--orange-400);
+
     //  Links
     @link-color:                                     var(--blue-600);
     @link-color-hover:                               var(--blue-500);
     @link-color-visited:                             var(--blue-700);
-    @block-link-highlight:                           var(--orange-400);
-    @navigation-link-highlight:                      var(--orange-400);
+    @block-link-highlight:                           @theme-primary-color;
+    @navigation-link-highlight:                      @theme-primary-color;
 
     //  Button Default
     @button-color:                                   var(--blue-600);
@@ -154,9 +157,9 @@
     @tags-muted-color-hover:                         var(--black-800);
 
     //  Pagination
-    @pagination-select-background:                   var(--orange-500);
+    @pagination-select-background:                   @theme-primary-color;
     @pagination-select-color:                        var(--white);
 
     // Sidebar widgets
-    @widget-navigation-current-color:                var(--orange);
+    @widget-navigation-current-color:                @theme-primary-color;
 }
