@@ -27,7 +27,7 @@
     background-color: transparent;
     outline: none;
     font-family: inherit;
-    font-size: @fs-body1;
+    font-size: var(--fs-body1);
     font-weight: normal;
     line-height: @lh-sm;
     text-align: center;
@@ -98,7 +98,7 @@
 
     &.s-btn__xs {
         padding: 0.6em;
-        font-size: @fs-fine;
+        font-size: var(--fs-fine);
 
         &.s-btn__dropdown {
             padding-right: 1.5em;
@@ -114,7 +114,7 @@
     }
 
     &.s-btn__sm {
-        font-size: @fs-caption;
+        font-size: var(--fs-caption);
 
         &.s-btn__dropdown {
             padding-right: 2.05em;
@@ -124,7 +124,7 @@
     &.s-btn__md {
         padding: 0.7em;
         border-radius: @br-sm + 1;
-        font-size: @fs-body3;
+        font-size: var(--fs-body3);
 
         &.s-btn__dropdown {
             padding-right: 1.8em;
@@ -142,7 +142,7 @@
     &.s-btn__lg {
         padding: 0.6em;
         border-radius: @br-sm + 1;
-        font-size: @fs-headline1;
+        font-size: var(--fs-headline1);
 
         &.s-btn__dropdown {
             padding-right: 1.5em;
@@ -160,7 +160,7 @@
     &.s-btn__xl {
         padding: 0.5em;
         border-radius: @br-sm + @br-sm;
-        font-size: @fs-headline2;
+        font-size: var(--fs-headline2);
 
         &.s-btn__dropdown {
             padding-right: 1.3em;
@@ -180,7 +180,7 @@
         display: inline-block;
         border-radius: @br-sm;
         padding: @su2 (@su4 - 1px);
-        font-size: @fs-caption;
+        font-size: var(--fs-caption);
         line-height: @lh-xs;
         background-color: currentColor;
     }

@@ -29,7 +29,7 @@
     max-width: 100%;
     border-collapse: collapse;
     border-spacing: 0;
-    font-size: @fs-body1;
+    font-size: var(--fs-body1);
 
     th,
     td {
@@ -58,7 +58,7 @@
     //  Custom styles when in a table head
     thead th {
         &:not(.s-table--bulk) {
-            font-size: @fs-fine;
+            font-size: var(--fs-fine);
         }
 
         vertical-align: bottom;
@@ -264,7 +264,7 @@
         th,
         td {
             padding-top: @su12;
-            font-size: @fs-subheading;
+            font-size: var(--fs-subheading);
             font-weight: bold;
         }
     }

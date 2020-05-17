@@ -31,7 +31,7 @@
 }
 
 .s-link-preview--title {
-    font-size: @fs-body3;
+    font-size: var(--fs-body3);
     font-weight: bold;
     color: var(--black-900);
 }
@@ -55,7 +55,7 @@ a.s-link-preview--title {
     }
 }
 .s-link-preview--details {
-    font-size: @fs-caption;
+    font-size: var(--fs-caption);
     color: var(--black-500);
     margin-top: @su2;
 
@@ -65,7 +65,7 @@ a.s-link-preview--title {
 }
 .s-link-preview--body {
     padding: @su12;
-    font-size: @fs-body2;
+    font-size: var(--fs-body2);
 
     *:last-child {
         margin-bottom: 0;
@@ -80,7 +80,7 @@ a.s-link-preview--title {
         border-radius: 0;
         padding: @su12;
         overflow: auto;
-        font-size: @fs-body1;
+        font-size: var(--fs-body1);
         line-height: @lh-sm;
         background-color: var(--black-050);
         font-family: var(--ff-mono);
@@ -107,7 +107,7 @@ a.s-link-preview--title {
     border-bottom-right-radius: @br-sm;
     border-top: 1px solid var(--black-100);
     padding: @su12;
-    font-size: @fs-caption;
+    font-size: var(--fs-caption);
 
     #stacks-internals #screen-sm({
         flex-direction: column;
