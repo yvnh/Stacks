@@ -23,7 +23,7 @@
     display: inline-block;
     padding: 0.8em;
     border: 1px solid transparent;
-    border-radius: @br-sm;
+    border-radius: var(--br-sm);
     background-color: transparent;
     outline: none;
     font-family: inherit;
@@ -123,7 +123,7 @@
 
     &.s-btn__md {
         padding: 0.7em;
-        border-radius: @br-sm + 1;
+        border-radius: 4px;
         font-size: var(--fs-body3);
 
         &.s-btn__dropdown {
@@ -141,7 +141,7 @@
 
     &.s-btn__lg {
         padding: 0.6em;
-        border-radius: @br-sm + 1;
+        border-radius: 4px;
         font-size: var(--fs-headline1);
 
         &.s-btn__dropdown {
@@ -159,7 +159,7 @@
 
     &.s-btn__xl {
         padding: 0.5em;
-        border-radius: @br-sm + @br-sm;
+        border-radius: 6px;
         font-size: var(--fs-headline2);
 
         &.s-btn__dropdown {
@@ -178,7 +178,7 @@
     .s-btn--badge {
         opacity: .5;
         display: inline-block;
-        border-radius: @br-sm;
+        border-radius: var(--br-sm);
         padding: @su2 (@su4 - 1px);
         font-size: var(--fs-caption);
         line-height: @lh-xs;
@@ -598,7 +598,7 @@
             border-width: 2px;
             border-style: solid;
             border-color: currentColor;
-            border-radius: @br-circle;
+            border-radius: var(--br-circle);
         }
 
         &:after {
@@ -612,7 +612,7 @@
             border-style: solid;
             border-color: transparent;
             border-left-color: currentColor;
-            border-radius: @br-circle;
+            border-radius: var(--br-circle);
             animation: s-spinner-rotate .9s infinite cubic-bezier(0.5, 0.1, 0.5, 0.9);
             // see _stacks-spinner.less for an explanation of the following two
             filter: invert(0); // (*)
